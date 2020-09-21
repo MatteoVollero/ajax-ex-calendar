@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-h1{
-  margin-left: 45%;
-}
-
 .container{
   width: 1200px;
   margin: auto;
@@ -31,4 +27,29 @@ ul li{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.title-container{
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.next:hover{
+  cursor:pointer;
+}
+
+.fas:hover{
+  cursor: pointer;
+}
+
+.nome-festivita{
+  color: red;
+}
+
+.replace{
+  display: none;
 }
