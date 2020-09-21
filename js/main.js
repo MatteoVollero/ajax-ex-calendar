@@ -65,15 +65,12 @@ $(document).ready(function(){
     var prossimoMese = nextMonth(++meseCorrente);
     if(prossimoMese == "Dicembre"){
       $(".next").hide();
-      $(".replace2").show();
     } else {
       $(".next").show();
-      $(".replace2").hide();
     }
 
     if(meseCorrente != 0){
       $(".prev").show();
-      $(".replace2").hide();
     }
 
     console.log(prossimoMese)
@@ -111,15 +108,12 @@ $(document).ready(function(){
     var prossimoMese = nextMonth(--meseCorrente);
     if(prossimoMese == "Gennaio"){
       $(".prev").hide();
-      $(".replace:first-child").show();
     } else {
       $(".prev").show();
-      $(".replace:first-child").hide();
     }
 
-    if(meseCorrente != 12){
+    if(meseCorrente != 11){
       $(".next").show();
-      $(".replace2").hide();
     }
 
     console.log(prossimoMese)
@@ -154,6 +148,7 @@ $(document).ready(function(){
 
   function nextMonth(meseAttuale){
     switch(meseAttuale){
+      case 0: return "Gennaio";
       case 1: return "Febbraio";
       case 2: return "Marzo";
       case 3: return "Aprile";
